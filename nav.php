@@ -4,7 +4,7 @@
     ?>
         <label id="start">Witaj <?= $_SESSION["username"] ?>!</label>
         <form action="delete.php">
-            <input id="logout" type="submit" value="Usuń konto"/>
+            <input type="submit" value="Usuń konto"/>
         </form>        
         <form action="logout.php">
             <input id="logout" type="submit" value="Wyloguj się"/>

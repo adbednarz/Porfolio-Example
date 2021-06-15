@@ -30,7 +30,8 @@
 					<img src="images/combinatorics.png" width="200" alt="combinatorics"/> 		
 					<p>Kombinatorykę analityczną też polubiłem dzięki praktycznym i ciekawym zadaniom. Lecz w tym przypadku dochodzi abstrakcja. Trzeba sobie pewne rzeczy ułożyć w głowie i przenieść do świata kombinatoryki analitycznej. Wchodząć w to stopniowo, można czerpać z tego dużą przyjemność.</p>					
 				</div>
-			</section>			
+				<p><a href="patterns.php"> Przykładowe wzory matemtyczne</a></p>			
+			</section>
 		</div>
 
 		<h2> Poza studiami </h2>

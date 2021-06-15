@@ -6,9 +6,9 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
   $email = $_POST["email"];
   $db = new SQLite3("database.db");
   $stmt = $db->prepare("INSERT INTO Users VALUES (:user, :passwd, :email)");
-  $stmt->bindValue(":user", $username, SQLITE3_TEXT);
-  $stmt->bindValue(":passwd", $password, SQLITE3_TEXT);
-  $stmt->bindValue(":email", $email, SQLITE3_TEXT);
+  $stmt->bindValue(":user", str_replace("<", "&lt;", $username), SQLITE3_TEXT);
+  $stmt->bindValue(":passwd", str_replace("<", "&lt;", $password), SQLITE3_TEXT);
+  $stmt->bindValue(":email", str_replace("<", "&lt;", $email), SQLITE3_TEXT);
   
   if ($stmt->execute()) {
     $_SESSION["username"] = $username;

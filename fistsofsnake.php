@@ -75,7 +75,7 @@
   		<form method="POST" action="/comment.php" id="usrform">
 			<input hidden=true name="project" value="fistsofsnake">
 			<input type="text" name="content">
-			<input type="submit" value="Wyślij">
+			<input type="submit" value="Dodaj">
   		</form>
 	<?php } ?>
 	</section>

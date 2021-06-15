@@ -46,29 +46,13 @@ window.onload = function() {
 	var e2 = document.getElementById("e2");
 	var e3 = document.getElementById("e3");	
 	if (window.location.href === "http://localhost/interests.php") {
-		e3.classList.add("nav_item");
-		if (e1.classList.contains("nav_item")) {
-			e1.classList.remove("nav_item");
-		}
-		if (e2.classList.contains("nav_item")) {
-			e2.classList.remove("nav_item");
-		}			
+		e3.classList.add("nav_item");		
 	} else if (window.location.href === "http://localhost/index.php") {
 		e1.classList.add("nav_item");
-		if (e2.classList.contains("nav_item")) {
-			e2.classList.remove("nav_item");
-		}
-		if (e3.classList.contains("nav_item")) {
-			e3.classList.remove("nav_item");
-		}		
+	} else if (window.location.href === "http://localhost/patterns.php") {
+		e3.classList.add("nav_item");
 	} else {
-		e2.classList.add("nav_item");
-		if (e1.classList.contains("nav_item")) {
-			e1.classList.remove("nav_item");
-		}
-		if (e3.classList.contains("nav_item")) {
-			e3.classList.remove("nav_item");
-		}		
+		e2.classList.add("nav_item");		
 	}
 	var logout = document.getElementById("logout");
 	if (logout) {
